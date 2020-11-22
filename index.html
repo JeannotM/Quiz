@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz van Jeannot</title>
+    <meta name="description" content="De quiz van Jeannot!">
+    <meta name="robots" content="noimageindex, nofollow, noindex, nosnippet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/minified.css">
+</head>
+
+<body>
+    <button id="particles">Zet particles uit</button>
+    <a id="documentatie" href="documentation/">Bekijk documentatie</a>
+    <div id="inlogbox">
+        <div class="inputbox">
+            <label for="Studentennummer">Studentennummer</label>
+            <input type="text" name="number" id="Studentennummer" maxlength="10">
+            <div class="checkbox-holder">
+                <label style="display:none" for="cookieOpslaan">Cookies 1 week opslaan</label>
+                <input type="checkbox" id="cookieOpslaan">
+                <p>Cookies 1 week opslaan</p>
+            </div>
+            <button id="inlogcheck">Accepteer</button>
+        </div>
+        <ul id="errors"></ul>
+    </div>
+    <div id="complimentWindow"></div>
+    <div class="grid-container">
+        <div class="page" id="eind">
+            <p id="information-end"></p>
+            <button id="scoreboard">Bekijk top scores</button>
+            <div id="latestScore" class="active">
+                <h3>Recente Score</h3>
+                <table></table>
+            </div>
+            <div id="topScore">
+                <h3>Top Score</h3>
+                <table></table>
+            </div>
+            <div class="share-buttons">
+                <a id="twitter" class="share" href="#twitter">Tweet je score!</a>
+            </div>
+            <h3>De quiz is over.</h3>
+        </div>
+        <div class="page" id="vragen">
+            <div class="nextPrevBtn">
+                <button id="prev" class="pageBtn" disabled><span class='numberBtn'>Backspace</span>Terug</button>
+                <button id="next" class="pageBtn" disabled><span class='numberBtn'>Enter</span>Next</button>
+            </div>
+        </div>
+        <div class="page">
+            <div id="start-page">
+                <h1>Welkom bij de quiz van Jeannot!</h1>
+                <div class="button-holder">
+                    <button class="button" id="button-start">Start</button>
+                    <button class="button" id="button-information">Informatie</button>
+                </div>
+                <ul id="information">
+                    <li>De quiz zal 1 tot 5 minuten duren.</li>
+                    <li>Verschillende vragen over HTML, CSS en JavaScript!</li>
+                    <li>Geen Google of andere zoekmachines gebruiken!</li>
+                    <li>Er zijn 10 vragen.</li>
+                    <li>Je kan de toetsen op je keyboard gebruiken om te navigeren</li>
+                    <li>Als je vals speelt zal je score niet opgeslagen worden</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="user-info">
+        <p id="username"></p>
+        <div id="shownAnswers"></div>
+        <input type="hidden" id="correct">
+        <p id="time">0:00</p>
+    </div>
+    <div id="background"></div>
+    <canvas id="canvas"></canvas>
+    <script src="js/quiz.js" defer></script>
+    <script src="js/particle.js" defer></script>
+</body>
+
+</html>

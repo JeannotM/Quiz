@@ -1,0 +1,96 @@
+@media screen and (max-width: 840px) {
+    .button {
+        width: 240px;
+        margin: 16px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+    .pageBtn .numberBtn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    #start-page {
+        padding-top: 120px;
+        text-align: center;
+    }
+    .button-holder {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .vraag {
+        margin: 40px 2% 20px 2%;
+    }
+    .pageBtn {
+        margin: 6px;
+        outline: 0;
+        width: 200px;
+        padding: 20px 12px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    .inputbox {
+        width: 320px;
+    }
+    .inputbox label {
+        left: 50px;
+    }
+    img {
+        width: 184px;
+        height: 184px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #start-page {
+        padding-top: 60px;
+    }
+    .quiz-button {
+        width: 96%;
+        margin: 2% 1%;
+        padding: 10px 10px;
+        font-size: 1.2rem;
+    }
+    #information {
+        font-size: 13px;
+    }
+    .numberBtn {
+        left: 4px;
+        top: 3px;
+        font-size: 16px;
+    }
+    #shownAnswers div {
+        margin: 2px 1px;
+        width: 8px;
+    }
+    img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.1em;
+    }
+    .quiz-button {
+        width: 96%;
+        margin: 2% 1%;
+        padding: 6px 8px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    img {
+        display: none;
+    }
+}
